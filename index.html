@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heart-container"></div>
+    
+    <div id="login-gate" class="glass-card">
+        <h1 id="gate-title">Identification 💖</h1>
+        <p id="gate-message">Please enter your name to proceed.</p>
+        <p class="hint">(hint: the name of the best woman ever)</p>
+        
+        <div class="input-group">
+            <input type="text" id="name-input" placeholder="Your beautiful name..." autocomplete="off">
+            <button onclick="checkAccess()" id="access-btn">Verify Identity ♡</button>
+        </div>
+        <p id="error-msg" class="hidden">Error: Only the owner of my heart can access this. ✨</p>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <h1 class="fade-in">Identity Verified.</h1>
+        <p class="sub-text">That is the name of someone who is always on my mind...</p>
+
+        <section class="final-ask">
+            <h2 id="question">So... will you be my Valentine?</h2>
+            <div class="btn-group">
+                <button id="yes-btn" onclick="celebrate()">YES! 💖</button>
+                <button id="no-btn" onclick="moveButton()">No 🥺</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
