@@ -70,22 +70,33 @@ const phrases = [
 
 function moveButton() {
     const noBtn = document.getElementById('no-btn');
+    const yesBtn = document.getElementById('yes-btn');
+    
     noClickCount++;
 
     if (noClickCount >= 5) {
-        noBtn.style.display = 'none'; 
-        console.log("Poof!"); 
+        // Poof effect
+        noBtn.style.transform = "scale(0)";
+        setTimeout(() => {
+            noBtn.style.display = 'none';
+        }, 300);
     } else {
         noBtn.innerHTML = phrases[noClickCount - 1];
-        const padding = 50;
-        const maxX = window.innerWidth - noBtn.offsetWidth - padding;
-        const maxY = window.innerHeight - noBtn.offsetHeight - padding;
+        const padding = 20;
+        const btnWidth = noBtn.offsetWidth;
+        const btnHeight = noBtn.offsetHeight;
+        const maxX = window.innerWidth - btnWidth - padding;
+        const maxY = window.innerHeight - btnHeight - padding;
         const randomX = Math.max(padding, Math.floor(Math.random() * maxX));
         const randomY = Math.max(padding, Math.floor(Math.random() * maxY));
-        
+
         noBtn.style.position = 'fixed';
         noBtn.style.left = randomX + 'px';
         noBtn.style.top = randomY + 'px';
+        
+        yesButtonScale += 0.2;
+        yesBtn.style.transform = `scale(${yesButtonScale})`;
     }
-
 }
+
+
