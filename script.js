@@ -1,4 +1,4 @@
-const Name = "test";
+const Name = "Douae";
 
 function createHearts() {
     const container = document.getElementById('heart-container');
@@ -51,8 +51,8 @@ function celebrate() {
     const mainContent = document.getElementById('main-content');
     
     mainContent.innerHTML = `
-        <h3 class="fade-in" style="font-size: 2.5rem;">Yayy! i knew you'd say yes ❤️</h3>
-        <h1 class="sub-text" style="font-size: 1.5rem;">You made me the happiest person ever 🌸</h1>
+        <h3 class="fade-in" style="font-size: 2.5rem;">Yayy! I knew you'd say yes ❤️</h3>
+        <h1 class="sub-text" style="font-size: 1.5rem;">Valentine's locked 🌸</h1>
     `;
 
     for(let i=0; i<50; i++) {
@@ -87,4 +87,5 @@ function moveButton() {
         noBtn.style.left = randomX + 'px';
         noBtn.style.top = randomY + 'px';
     }
+
 }
