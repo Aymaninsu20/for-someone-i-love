@@ -75,7 +75,6 @@ function moveButton() {
     noClickCount++;
 
     if (noClickCount >= 5) {
-        // Poof effect
         noBtn.style.transform = "scale(0)";
         setTimeout(() => {
             noBtn.style.display = 'none';
@@ -98,5 +97,6 @@ function moveButton() {
         yesBtn.style.transform = `scale(${yesButtonScale})`;
     }
 }
+
 
 
