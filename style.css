@@ -73,7 +73,6 @@ button:hover {
 
 #error-msg { color: #d00000; font-size: 0.85rem; margin-top: 15px; }
 
-/* Floating Hearts Background */
 #heart-container {
     position: fixed;
     top: 0; left: 0;
@@ -121,4 +120,5 @@ button:hover {
 @keyframes fadeOut {
     from { opacity: 1; transform: scale(1); }
     to { opacity: 0; transform: scale(1.5); }
+
 }
