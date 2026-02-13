@@ -60,6 +60,7 @@ function celebrate() {
     }
 }
 let noClickCount = 0;
+let yesButtonScale = 1;
 const phrases = [
     "Are you sure?",
     "Think again...",
@@ -97,6 +98,7 @@ function moveButton() {
         yesBtn.style.transform = `scale(${yesButtonScale})`;
     }
 }
+
 
 
 
